@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="container1">
+        <input type="text" style="height:10vh ;" [(ngModel)]="term">
+<br>
+<button class="button" (click)="add()">Add Another Number</button>
+
+
+<button class="button" (click)="submit()">submit</button>
+
+</div>
+<div class="table" *ngFor="let i of data"><div class="numbers" *ngIf="i.valid"><h3>{{i.number}}</h3>
+<button (click)="delete(i.id) " class="button-8">delete</button></div></div>
+<br>
+</div>
